@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mozamil - Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav">
+            <h2 class="logo">Mozamil</h2>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">من أنا</a></li>
+                <li><a href="#skills">المهارات</a></li>
+                <li><a href="#projects">المشاريع</a></li>
+                <li><a href="#contact">تواصل معي</a></li>
+            </ul>
+            <button class="lang-switch" onclick="toggleLanguage()">EN</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 data-ar="مرحباً، أنا مزمل" data-en="Hello, I'm Mozamil">مرحباً، أنا مزمل</h1>
+                <h2 data-ar="مطور ويب أمامي" data-en="Frontend Developer">مطور ويب أمامي</h2>
+                <p data-ar="أصمم وأبني مواقع ويب حديثة ومتجاوبة" data-en="I design and build modern responsive websites">أصمم وأبني مواقع ويب حديثة ومتجاوبة</p>
+                <a href="#projects" class="btn" data-ar="شاهد أعمالي" data-en="View My Work">شاهد أعمالي</a>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="hero-img">
+                <img src="images/mozamil.png" alt="Mozamil">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container about">
+            <div class="about-img">
+                <img src="images/mozamil.png" alt="صورة مزمل">
+            </div>
+            <div class="about-text">
+                <h2 data-ar="من أنا" data-en="About Me">من أنا</h2>
+                <p data-ar="أنا مطور ويب متخصص في HTML وCSS وJavaScript. أحب إنشاء مواقع نظيفة ومتجاوبة تلبي احتياجات المستخدمين. لدي شغف بتعلم التقنيات الجديدة وتحسين مهاراتي باستمرار." data-en="I'm a web developer specialized in HTML, CSS, and JavaScript. I love creating clean and responsive websites that meet users' needs. I'm passionate about learning new technologies and constantly improving my skills.">أنا مطور ويب متخصص في HTML وCSS وJavaScript. أحب إنشاء مواقع نظيفة ومتجاوبة تلبي احتياجات المستخدمين. لدي شغف بتعلم التقنيات الجديدة وتحسين مهاراتي باستمرار.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="center" data-ar="المهارات" data-en="Skills">المهارات</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 90%;">90%</div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 85%;">85%</div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 70%;">70%</div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 60%;">60%</div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-bootstrap"></i>
+                    <h3>Bootstrap</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 75%;">75%</div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 80%;">80%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="center" data-ar="المشاريع" data-en="Projects">المشاريع</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 data-ar="موقع شخصي" data-en="Personal Portfolio">موقع شخصي</h3>
+                    <p data-ar="موقع بورتفolio شخصي متجاوب" data-en="Responsive personal portfolio website">موقع بورتفolio شخصي متجاوب</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3 data-ar="متجر إلكتروني" data-en="E-commerce Store">متجر إلكتروني</h3>
+                    <p data-ar="متجر لبيع المنتجات مع سلة تسوق" data-en="Product store with shopping cart">متجر لبيع المنتجات مع سلة تسوق</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3 data-ar="موقع عيادة" data-en="Clinic Website">موقع عيادة</h3>
+                    <p data-ar="موقع لعيادة طبية احترافي" data-en="Professional medical clinic website">موقع لعيادة طبية احترافي</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-landing-page"></i>
+                    </div>
+                    <h3 data-ar="صفحة هبوط" data-en="Landing Page">صفحة هبوط</h3>
+                    <p data-ar="صفحة هبوط منتج متجاوبة" data-en="Responsive product landing page">صفحة هبوط منتج متجاوبة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="center" data-ar="تواصل معي" data-en="Contact Me">تواصل معي</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>email@example.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1234567890</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-ar="السودان" data-en="Sudan">السودان</span>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="الاسم / Name" required>
+                    <input type="email" placeholder="البريد الإلكتروني / Email" required>
+                    <textarea rows="5" placeholder="الرسالة / Message" required></textarea>
+                    <button type="submit" data-ar="إرسال" data-en="Send">إرسال</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 <span>Mozamil</span>. <span data-ar="جميع الحقوق محفوظة" data-en="All Rights Reserved">جميع الحقوق محفوظة</span></p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        let isArabic = true;
+
+        function toggleLanguage() {
+            isArabic = !isArabic;
+            
+            // Toggle HTML lang and direction
+            document.documentElement.lang = isArabic ? 'ar' : 'en';
+            document.documentElement.dir = isArabic ? 'rtl' : 'ltr';
+            
+            // Update button text
+            document.querySelector('.lang-switch').textContent = isArabic ? 'EN' : 'عربي';
+            
+            // Update all elements with data-ar and data-en
+            document.querySelectorAll('[data-ar]').forEach(el => {
+                el.textContent = isArabic ? el.getAttribute('data-ar') : el.getAttribute('data-en');
+            });
+        }
+    </script>
+
+</body>
+</html>
